@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="findingsea">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="findingsea">
+    <meta name="keywords" content="findingsea's blog | findingsea">
+    <meta name="description" content="">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>所以，『读书』这么小的蛋糕，还要多少人来分呢？ · findingsea&#39;s Studio</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180721" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180721" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin="">
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin="">
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >findingsea&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">所以，『读书』这么小的蛋糕，还要多少人来分呢？</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>findingsea's Studio.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:50vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            所以，『读书』这么小的蛋糕，还要多少人来分呢？
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Reading">Reading</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count">4,217</span> / Reading time: <span class="post-count">14 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2015/09/01</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>前几天，刷RSS的时候突然刷出一条新闻——腾讯推出『微信阅读』，心里第一反应：霍，又来一个。</p>
+<p>我本身可以算是一个『中度』阅读者，阅读的风格可见我的<a href="http://book.douban.com/people/findingsea_ly/collect" target="_blank" rel="noopener">豆瓣书单</a>。所以各种各样的阅读软件和阅读器都多多少少玩过，家里的纸质书更是多得满出书柜。</p>
+<a id="more"></a>
+
+<p>我刚开始读电子书用电子书阅读器的时候，身边人对于电子阅读还嗤之以鼻，Kindle还只有PaperWhite一代，多看的排版还能秒杀一切友商，豆瓣阅读还是那个又难看又难用还万年才更新一次的版本，其他的各种像掌阅（iReader）、GoodReader和Documents也是各有优劣。</p>
+<p>到今天，Kindle换成了Voyage依然是我的主力阅读器，多看的精排优势在消失同时平台上开始充斥低质量书，豆瓣终于把它的阅读软件换上了自家的小清新风格，百度做了自己的百度阅读，淘宝有自己的淘宝阅读（还是挖了多看的高管，虽然现在看起来是要倒），京东也出了自己的阅读器，掌阅不再满足只做电子书平台也出了阅读器，然后就是最近腾讯也出手推出了微信阅读。</p>
+<p>一瞬间，好像电子阅读这个市场突然就变得异常拥挤，小小的蛋糕却吸引得大批厂商蜂拥而至，但是毕竟现在一般人肯静下心阅读的时间就那么一点，根本经不起这样瓜分。不过电子阅读市场这么『繁荣』的样子，不禁让我想起当初自己对于各大平台的试水取舍经历。</p>
+<h2 id="电子书-VS-纸质书"><a href="#电子书-VS-纸质书" class="headerlink" title="电子书 VS 纸质书"></a>电子书 VS 纸质书</h2><p>最早的电子书概念应该算是那些放在功能机（甚至是MP3）上的txt文件，那个时候我真是见识过在一次只能看一行的MP3上硬生生读完一大本小说的人，那样纯粹的阅读的乐趣现在也是很少了。</p>
+<p>我当时在电子书和纸质书之间做抉择的时候，已经到了多看在Android上发出第一版的时间点了。当时我是大三到大四的暑假，已经在实习了，软件公司（导师公司）的工作时长会严重压缩的业余生活，每次早上7点半起床到晚上7点半吃完饭，基本上都算是工作时间，偏偏还遇上保持着『你主管都没走，你怎么能走』管理哲学的老板（导师），所以下班时间基本只晚不早。</p>
+<p>就是在这样的背景下，我发现根本做不到像以前那样自在读书，一天除去工作和生活琐碎，已经没剩多少时间，而且书还没法随手就拿到，晚上有时候待教室有时候待实验室有时候直接回寝室，又不可能把书整天随身带却只为了能看那么半个小时。</p>
+<p>在这样的情况下，电子书就变成一种不错的选择，电子书对比纸质书的优势点是非常明显的：</p>
+<ul>
+<li>便携：其实就是带着手机就行，我们对手机的依赖程度，使得阅读电子书基本是零额外携带成本，完爆纸书。同时，邻近毕业了怎么处理自己那么多书一直是我的困扰，所以几乎每次都要一再遏制自己再买书的冲动，非常痛苦。</li>
+<li>笔记：看纸书让我最头痛的一点就是做笔记，因为带着书就已经很不容易了，还要随身带着笔记本实在太麻烦，除非是去图书馆的这样专门的长时间的阅读行为，不然为了偶尔的几句笔记却需要额外带一个笔记本，实在接受不能（但是在真正需要记笔记却记不了的时候更令人抓狂）。电子书基本完美解决这个问题，做笔记基本算是各家电子书阅读软件最平常的必备功能，却完美解决了纸书的一大痛点。</li>
+<li>碎片化阅读：很显然，现在在工作日还能挤出大段连续完整时间的人已经不多了，但是各种碎片空闲时间零零总总却也不少：等公交车等地铁的时间、排队买饭的时间、工作的间隙等等。这些时间单看都特鸡肋，长不长短不短，但是一天下来这些时间总和却不算少。而且这些时间由于各种局限，其实能做的事情并不多，但是很适合用来做手机上的短篇阅读。那些对上下文依赖没那么强的文本类型，都很适合在这些时候用电子书阅读，而且积少成多，一本书很快不知不觉就读完了（我在多看上看完的第一本书就是《黑客与画家》，基本可以算是用等车和坐车的碎片时间看完的）。</li>
+</ul>
+<p>当然了，劣势也同样明显：</p>
+<ul>
+<li>书少：纸质书本身作为记载人类智慧的最大载体，存在这上千年形成的巨大知识宝库，体量比电子书大太多了。而且纸质书一般都具有首发优势，加之很多书受版权限制暂时出不了电子版，都是电子书的巨大劣势。当然，价格可能也是一个，一本纸质书卖几十块钱没人会抱怨什么，但是一本电子书卖十几块钱就会有很多嫌贵了，毕竟大众没有培养起来为虚拟产品付费的奇怪（各类应用APP同理）。</li>
+<li>排版差：纸质出版社，出版一本书需要大量的时间和人力成本放在排版设计和校对上，电子书出版不可能也花那么多时间和人力（首先是没有这么多资源，其次是如果这么做那电子书就会和纸质书定价差不多，那样更没人会买）。所以市面上的电子书（特指2012到2013年左右的那段时间），不管是官方的（亚马逊）还是个人的（盗版或是其他渠道），排版都不尽如人意，校对也是乱七八糟，即便是以精排版著称的多看也是有让人难以忍受的时候（当初在多看 for Kindle上看《基业长青》那个痛苦还历历在目）。</li>
+</ul>
+<p>在车上用多看看完了几本书之后，我算是终于踩进了电子书的坑，在手机和iPad上常年保持着多看和豆瓣阅读，同时在毕业当天，买了一台Kindle。</p>
+<h2 id="多看阅读"><a href="#多看阅读" class="headerlink" title="多看阅读"></a>多看阅读</h2><p><img src="http://7d9mp8.com1.z0.glb.clouddn.com/E-book%20reading%20experience2129-61e3a4fd410b6293.PNG" alt="多看阅读"></p>
+<p>多看的优点非常明显，而且保持地很好：</p>
+<ul>
+<li>排版好：相对其他平台，多看更注重单本书的排版质量，而不是亚马逊式的先把量提上来。不过这个优势在渐渐变小，其一是由于别家的排版也开始渐渐好起来，前期冲量的时间段过去之后，大家都开始注重质了；其二是由于多看上的书多了之后，难以兼顾到每本书的质量（就像上文提到的《基业长青》，基本上几页就会有一个错别字、断行错误或者漏排之类的错误）。</li>
+<li>多平台支持：就我用过而言，多看支持Kindle（不知道最新的型号还支不支持）、Android、iOS和Web，而且每个平台的体验都不错并且很统一，切换毫无压力且支持云同步。这个优势是非常吸引人的，豆瓣阅读不支持Kindle并且自家的APP做得难用，Kindle在Android和iOS上的APP体验简直槽糕透顶并且不支持Web。这个优势可以说多看保持到了现在，不过由于目前多看对Kindle有点战略性放弃的意思，所以在平台的支持性上豆瓣阅读已经慢慢和多看持平了。</li>
+<li>笔记管理方便：多看支持标注、笔记和导出笔记到EverNote，这些基础功能多看做得有扎实又好，尤其是导出到EverNote这对我而言简直是Killer Feature（我是EverNote年付费用户）。别家的话，Kindle上做标注和笔记的体验不提也罢，豆瓣阅读上的笔记竟然不能同步到豆瓣读书上（起码当时是这样），完全浪费了豆瓣这么个大平台的优势。</li>
+</ul>
+<p>很长一段时间以来，多看都是我首选的阅读平台，这得益于它以上的优点。但是入了Kindle之后，也渐渐少用了，毕竟多看的这些软件优势已经被逐渐赶上，但是Kindle的硬件优势暂时还无人撼动。</p>
+<h2 id="豆瓣阅读"><a href="#豆瓣阅读" class="headerlink" title="豆瓣阅读"></a>豆瓣阅读</h2><p><img src="http://7d9mp8.com1.z0.glb.clouddn.com/E-book%20reading%20experience2129-2ca5afa50b7c3c3d.PNG" alt="豆瓣阅读"></p>
+<p>我对豆瓣是相当有感情的，其一是豆瓣拥有我需求粘性最高的几个功能——书评、影评和音乐推荐等；其二是豆瓣是少数还没被我玩得乌烟瘴气的社交平台，也是少数我愿意打开推送的平台。</p>
+<p>所以当发现豆瓣也开始（顺理成章地）进入电子书市场，我第一时间都开始用了，最大的体会就是豆瓣的优势还是在于它的软实力：</p>
+<ul>
+<li>选书：豆瓣阅读的选书可以说秉承了一贯豆瓣平台的『高逼格』气质，有一段时间我想看的书只能在豆瓣阅读上找到，那自然我不会放弃这个平台。</li>
+<li>平台：豆瓣阅读的背后是豆瓣这么大一个平台，所以它不仅仅是一个阅读软件，还是一个优质文字资源平台（优质的书和优质的作者）。</li>
+</ul>
+<p>豆瓣阅读这个APP本身在第一个大版本号的时候真是惨不忍睹，尤其在多看的面前。当然这都是过去了，现在豆瓣阅读迎来第二个大版本号，全面改版，久违的小清新风格又回来了。</p>
+<p>就发展而言，我非常看好豆瓣，原因在于：</p>
+<ul>
+<li>以前留下的坑基本填完。现在书量也上去了，APP也改版了，和豆瓣平台的其他应用也增加了交互。</li>
+<li>优点依旧。选书品味这事还真不是一天两天能练出来的，豆瓣阅读现在仍然保持了很高水平的单本质量，相比多看平台一打开就是各种『畅销书』，豆瓣阅读无疑有着更高的水准。</li>
+<li>平台优势发挥。现在豆瓣阅读最吸引我的，反而是它的作家专栏，很多优质的知识不见得要写成书（成本问题），用专栏的方式更容易传播和阅读，但这个能做成的关键点就是要有一批优质的专栏作家，这恰恰是豆瓣在前期积累的成果，这个平台上聚集了一批专业能力和写作水平都属上乘的用户，放以前他们如果想在纸媒开专栏可能还是强人所难了，但是现在豆瓣阅读这个平台为他们提供了一个低门槛的专栏，那些愿意分享的用户只要提供内容就行，豆瓣提供了便捷的发布和良好的阅读体验。其实这个和知乎专栏的情况有点像，只是知乎自己不做阅读软件。这里需要注意的是，豆瓣阅读专栏门槛低成本低，可是是输出内容的质量一点也不低，这样的优势真是别的平台学不来呀。</li>
+</ul>
+<h2 id="Kindle"><a href="#Kindle" class="headerlink" title="Kindle"></a>Kindle</h2><p><img src="http://7d9mp8.com1.z0.glb.clouddn.com/E-book%20reading%20experience2129-54080015b410d97f.jpg" alt="Kindle Voyage"></p>
+<p>Kindle有一种神奇的魔力，你没用过Kindle之前会觉得它丝毫没有吸引力，但是你一旦真正用它看过一两本书之后却再也停不下来，再也拿不起其他平台了。</p>
+<p>Kindle是一种优缺点极其鲜明，优势劣势都极其大的存在：</p>
+<ul>
+<li>媲美纸书的阅读体验：E-link水墨屏带来的是和纸书相差无几的视觉效果，它和LED屏的区别不是好坏，而是它们完全是两个世界的东西。一个阅读平台或者一款阅读器最最核心的功能毋庸置疑就是『看书』，其他的一切一切再好也只是装饰，你在使用产品的时候，80%的时间其实就是一动不动地看着屏幕而已。而在这80%的几乎零交互时间里，Kindle完爆其他同类产品。完美的水墨显示效果，现代电子产品上的复古打印风格，这种奇妙的组合真是拿起来就放不下。</li>
+<li>安静：看书本来是一件非常个人的非常安静的活动，但是电子设备难免都会有各种纷繁复杂的功能，令人眼花缭乱的同时，也大大打扰了阅读的完整性。Kindle是纯粹地为阅读而存在的设备，所以使用Kindle阅读的过程中，除了你自己没什么能打断你。（其他设备不光是有各种其他应用，还包括可能会有反光，可能因为长时间握持太重了，这些都会打断你的阅读，而这些问题在Kindle上都不存在。）</li>
+<li>平台：Kindle背后的Amazon真是太大了，这个平台的实力和野心都远远超过了上面提到的两家（豆瓣和小米）。Amazon前期快速地扩张书籍资源，在积累到一定量之后，再精细化，同时对阅读器本身的雕琢和改进却一直没有停止，最新的Voyage简直赏心悦目。所以Kindle之于多看和豆瓣阅读，有点像iPhone之于Android一样，它不仅是一个阅读软件，一个书库平台，它更是一个阅读器硬件，更是一个亚马逊巨大的资源整合（想象一下以后可以在Kindle上直接买外文书）。Kindle提供给了更闭环的平台生态，更贴近纸质书的阅读体验和更广阔的想象空间，没法不吸引人。</li>
+</ul>
+<p>买Kindle几乎成为我最近几年最超值的消费，一年在Kindle上看掉的书要在20到30本左右。出了交互操作实在渣渣（E-link屏幕刷新频率的限制），其他都完美解决我的痛点（便携，阅读感和手持体验），尤其是最新版的Kindle Voyage，连以前有点受诟病的外观都变得出挑并且更进一步优化了握持体验。</p>
+<p>有一个亚马逊官方统计显示：Kindle会增加用户的纸质书购买量——购买了Kindle的用户，他们购买纸质书的数量也随之增加了。也就是买了Kindle的人，Kindle让他爱上的不是Kindle，而是『读书』这件事本身。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这一两年，我的阅读量都在45到50本左右（不含杂志），其中电子书占比在50%左右。同时我感觉到电子书大大促进了我的阅读欲望，因为你能更方便地更快捷地接触到那些优秀的作品，所以这一年我的纸质书购买量不减反增（因为整体的阅读量上升了）。</p>
+<p>现在买书的流程都是先审一遍书的评价，专业书和我觉得有收藏价值的书会直接买纸质，流行书是一般只（先）买电子版，看得好了再买纸质版用来收藏。</p>
+<p>电子书的阅读也是Kindle为主，多看和豆瓣阅读为辅。主要感兴趣的书都在Kindle上看，杂志在多看上看，一些专栏和多看上未上架的书在豆瓣阅读上看。</p>
+<p>最后，因为看到腾讯推出了微信阅读而有感而发的文章，不知不觉写了这么多。回到微信阅读上，我比较讨厌的是把读书的多少作为比拼的排行。在我看来，读书是非常私密的事情，分享当然是好的，但是用读书来比较难免失去了读书的初衷和快乐。</p>
+<p>这世上有那么多作家那么多书，他们自有其存在的价值，我们要做的是尽量去多看多读，去见识更广阔的存在，去消弭身上的戾气和偏见。这么开心的事情，别搞得太功利了。：）</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://findingsea.github.io">findingsea</a>
+            <p>原文链接: <a href="http://findingsea.github.io/2015/09/01/E-book-reading-experience/">http://findingsea.github.io/2015/09/01/E-book-reading-experience/</a>
+            <p>发表日期: <a href="http://findingsea.github.io/2015/09/01/E-book-reading-experience/">September 1st 2015, 8:18:36 pm</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2015/10/03/scrapy-step-1/" title= Scrappy入门：百度贴吧图片爬虫 >
+                    <div class="nextTitle">Scrappy入门：百度贴吧图片爬虫</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2015/08/30/august-reading-report/" title= 2015年8月阅读报告 >
+                    <div class="prevTitle">2015年8月阅读报告</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC和WAP自适应版-->
+
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:findingsea@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/findingsea" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/assets/example_qr.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#电子书-VS-纸质书"><span class="toc-number">1.</span> <span class="toc-text">电子书 VS 纸质书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多看阅读"><span class="toc-number">2.</span> <span class="toc-text">多看阅读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#豆瓣阅读"><span class="toc-number">3.</span> <span class="toc-text">豆瓣阅读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Kindle"><span class="toc-number">4.</span> <span class="toc-text">Kindle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最后"><span class="toc-number">5.</span> <span class="toc-text">最后</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 99
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/My-remote-experience/" >远程办公的一些感受</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/12</span><a class="archive-post-title" href= "/2020/01/12/2019-review/" >一些想法 Review</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/05</span><a class="archive-post-title" href= "/2019/07/05/c-struct-operator/" >C++ 结构体操作符重载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/02</span><a class="archive-post-title" href= "/2019/05/02/two-tips-on-cpp-vector/" >关于 C++ vector 的两个小 tips</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/16</span><a class="archive-post-title" href= "/2019/03/16/jiek-third-party-developer/" >即刻第三方开发者</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/13</span><a class="archive-post-title" href= "/2019/03/13/my-Campus-Recruitment/" >我的校招回顾</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/07</span><a class="archive-post-title" href= "/2019/03/07/c-tips/" >C++ Tips</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2018 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/14</span><a class="archive-post-title" href= "/2018/09/14/Go-jsonpb/" >Go Protobuf 资源的可读化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/17</span><a class="archive-post-title" href= "/2018/08/17/go-slice/" >Go slice 扩容问题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/02</span><a class="archive-post-title" href= "/2017/07/02/A-Beautiful-Math/" >《纳什均衡与博弈论》</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/13</span><a class="archive-post-title" href= "/2017/06/13/9787208139008/" >《东京本屋》</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/13</span><a class="archive-post-title" href= "/2017/06/13/Outliers-The-Story-of-Success/" >《异类》</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/13</span><a class="archive-post-title" href= "/2017/06/13/9787550242234/" >《哲学家们都干了些什么》</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href= "/2017/06/12/Fall-of-Giants/" >《巨人的陨落》</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2015/12/24/november-reading-report/" >2015年11月阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/16</span><a class="archive-post-title" href= "/2015/11/16/october-reading-report/" >2015年10月阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2015/10/09/Sliding-Window-Maximum-LeetCode/" >Sliding Window Maximum@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2015/10/09/java-generic-type-erasure/" >Java泛型：类型擦除</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/06</span><a class="archive-post-title" href= "/2015/10/06/september-reading-report/" >2015年9月阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/03</span><a class="archive-post-title" href= "/2015/10/03/scrapy-step-1/" >Scrappy入门：百度贴吧图片爬虫</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/01</span><a class="archive-post-title" href= "/2015/09/01/E-book-reading-experience/" >所以，『读书』这么小的蛋糕，还要多少人来分呢？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/30</span><a class="archive-post-title" href= "/2015/08/30/august-reading-report/" >2015年8月阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/06</span><a class="archive-post-title" href= "/2015/08/06/Shortest-Palindrome-LeetCode/" >Shortest Palindrome@LeetCode（以及关于KMP的理解）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2015/08/04/beautiful-mistake/" >我达达的马蹄是美丽的错误</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/22</span><a class="archive-post-title" href= "/2015/07/22/miss-you/" >不错过你</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/22</span><a class="archive-post-title" href= "/2015/07/22/Java-Windows-ffmpeg-video-convert/" >Java+Windows+ffmpeg实现视频转换</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/20</span><a class="archive-post-title" href= "/2015/07/20/doubanreader-notes/" >豆瓣阅读报告生成器</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/14</span><a class="archive-post-title" href= "/2015/07/14/jun-reading-report/" >2015年6月阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span><a class="archive-post-title" href= "/2015/05/08/february-reading-report/" >二月份阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span><a class="archive-post-title" href= "/2015/05/08/april-reading-report/" >四月份阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span><a class="archive-post-title" href= "/2015/05/08/march-reading-report/" >三月份阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/06</span><a class="archive-post-title" href= "/2015/05/06/dungeon-game-at-leetcode/" >Dungeon Game@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/06</span><a class="archive-post-title" href= "/2015/05/06/maximum-gap-at-leetcode/" >Maximum Gap@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/05</span><a class="archive-post-title" href= "/2015/05/05/so-one-more-time/" >所以，再战一年吗？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/05</span><a class="archive-post-title" href= "/2015/05/05/find-minimum-in-rotated-sorted-array-i-ii-at-leetcode/" >Find Minimum in Rotated Sorted Array I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2015/05/04/max-points-on-a-line-at-leetcode/" >Max Points on a Line@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/28</span><a class="archive-post-title" href= "/2015/04/28/lru-cache-at-leetcode/" >LRU Cache@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/27</span><a class="archive-post-title" href= "/2015/04/27/binary-tree-preorder-slash-postorder-traversal/" >Binary Tree Preorder/Postorder Traversal</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/26</span><a class="archive-post-title" href= "/2015/04/26/word-break-i-ii-at-leetcode/" >Word Break I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/25</span><a class="archive-post-title" href= "/2015/04/25/copy-list-with-random-pointer-at-leetcode/" >Copy List with Random Pointer@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/24</span><a class="archive-post-title" href= "/2015/04/24/candy-at-leetcode/" >Candy@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/24</span><a class="archive-post-title" href= "/2015/04/24/palindrome-partitioning-i-ii-at-leetcode/" >Palindrome Partitioning I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href= "/2015/04/22/longest-consecutive-sequence-at-leetcode/" >Longest Consecutive Sequence@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span><a class="archive-post-title" href= "/2015/04/21/binary-tree-maximum-path-sum-at-leetcode/" >Binary Tree Maximum Path Sum@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/20</span><a class="archive-post-title" href= "/2015/04/20/populating-next-right-pointers-in-each-node-i-ii-at-leetcode/" >Populating Next Right Pointers in Each Node I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/19</span><a class="archive-post-title" href= "/2015/04/19/distinct-subsequences-at-leetcode/" >Distinct Subsequences@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/19</span><a class="archive-post-title" href= "/2015/04/19/recover-binary-search-tree-at-leetcode/" >Recover Binary Search Tree@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/17</span><a class="archive-post-title" href= "/2015/04/17/interleaving-string-at-leetcode/" >Interleaving String@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/16</span><a class="archive-post-title" href= "/2015/04/16/scramble-string-at-leetcode/" >Scramble String@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/16</span><a class="archive-post-title" href= "/2015/04/16/maximal-rectangle-at-leetcode/" >Maximal Rectangle@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/14</span><a class="archive-post-title" href= "/2015/04/14/largest-rectangle-in-histogram-at-leetcode/" >Largest Rectangle in Histogram@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/13</span><a class="archive-post-title" href= "/2015/04/13/minimum-window-substring-at-leetcode/" >Minimum Window Substring@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span><a class="archive-post-title" href= "/2015/04/12/edit-distance-at-leetcode/" >Edit Distance@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/11</span><a class="archive-post-title" href= "/2015/04/11/text-justification-at-leetcode/" >Text Justification@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/10</span><a class="archive-post-title" href= "/2015/04/10/valid-number-at-leetcode/" >Valid Number@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2015/04/08/insert-interval-at-leetcode/" >Insert Interval@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2015/04/07/java-custom-key-in-hashmap/" >Java 用自定义类型作为HashMap的键</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2015/04/07/merge-intervals-at-leetcode/" >Merge Intervals@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2015/04/06/n-queens-at-leetcode/" >N-Queens I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2015/04/06/jump-game-ii/" >Jump Game II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/03</span><a class="archive-post-title" href= "/2015/04/03/java-generics-part1/" >Java泛型 泛型类、泛型接口和泛型方法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/03</span><a class="archive-post-title" href= "/2015/04/03/wildcard-matching/" >Wildcard Matching@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2015/04/02/trapping-rain-water/" >Trapping Rain Water@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2015/04/01/first-missing-positive/" >First Missing Positive@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2015/03/31/sudoku-solver/" >Sudoku Solver@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/30</span><a class="archive-post-title" href= "/2015/03/30/search-in-rotated-sorted-array/" >Search in Rotated Sorted Array@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/29</span><a class="archive-post-title" href= "/2015/03/29/longest-valid-parentheses/" >Longest Valid Parentheses@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/29</span><a class="archive-post-title" href= "/2015/03/29/permutations-i-ii/" >Permutations I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/27</span><a class="archive-post-title" href= "/2015/03/27/substring-with-concatenation-of-all-words/" >Substring with Concatenation of All Words@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/26</span><a class="archive-post-title" href= "/2015/03/26/reverse-nodes-in-k-group/" >Reverse Nodes in k-Group@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/26</span><a class="archive-post-title" href= "/2015/03/26/merge-k-sorted-lists/" >Merge k Sorted Lists@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/24</span><a class="archive-post-title" href= "/2015/03/24/regular-expression-matching/" >Regular Expression Matching@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2015/03/23/january-reading-report/" >一月份阅读报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2015/03/23/median-of-two-sorted-arrays/" >Median of Two Sorted Arrays@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/20</span><a class="archive-post-title" href= "/2015/03/20/what-will-happen-when-you-visit-taobao/" >当你访问淘宝的时候，发生了什么？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/19</span><a class="archive-post-title" href= "/2015/03/19/dungeon-game/" >Dungeon Game@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/18</span><a class="archive-post-title" href= "/2015/03/18/heap-and-heap-sort/" >堆和堆排序</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/18</span><a class="archive-post-title" href= "/2015/03/18/largest-number/" >Largest Number@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/17</span><a class="archive-post-title" href= "/2015/03/17/string-stringbuffer-stringbuilder/" >String, StringBuffer和StringBuilder</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/17</span><a class="archive-post-title" href= "/2015/03/17/rotate-array/" >Rotate Array@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/17</span><a class="archive-post-title" href= "/2015/03/17/repeated-dna-sequences/" >Repeated DNA Sequences@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/17</span><a class="archive-post-title" href= "/2015/03/17/alibaba-phone-interview/" >面试查漏补缺——阿里</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2015/03/12/min-stack/" >Min Stack@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2015/03/12/maximum-product-subarray/" >Maximum Product Subarray@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/11</span><a class="archive-post-title" href= "/2015/03/11/java-callback/" >Java Callback</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/27</span><a class="archive-post-title" href= "/2015/02/27/word-ladder-i-ii/" >Word Ladder I II@LeetCode</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/26</span><a class="archive-post-title" href= "/2015/02/26/best-time-to-buy-and-sell-stock-i-ii-iii/" >Best Time to Buy and Sell Stock I II III IV@LeetCode</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/07</span><a class="archive-post-title" href= "/2014/06/07/javascript-closure/" >JavaScript闭包和this绑定</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href= "/2014/04/22/hd-oj-1005/" >HD-OJ-1005</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/03</span><a class="archive-post-title" href= "/2014/04/03/php-dictionary-online/" >项目总结：PHP在线词典</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2014/03/12/python-divison-tips/" >Python异号除法需要注意的问题</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/20</span><a class="archive-post-title" href= "/2014/02/20/system-memo/" >系统日志</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/17</span><a class="archive-post-title" href= "/2013/11/17/why-i-read/" >我为什么阅读</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/09</span><a class="archive-post-title" href= "/2013/11/09/django-tips-2/" >Django Tips - 2</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/03</span><a class="archive-post-title" href= "/2013/11/03/former-company/" >从前同事的离职说起</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2013/10/19/django-dev-on-weibo-apps-1/" >Django Tips - 1</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/23</span><a class="archive-post-title" href= "/2013/09/23/about-we-were-unable-to-load-disqus/" >可能引起「We were unable to load Disqus」错误的一种情况分析</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/20</span><a class="archive-post-title" href= "/2013/09/20/li-yong-octopresszai-githubshang-da-jian-bo-ke-ji-hou-xu-wen-ti-zong-hui/" >利用Octopress在Github上搭建博客及后续问题总汇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/20</span><a class="archive-post-title" href= "/2013/09/20/pythonsheng-cheng-qi/" >Python生成器</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Octopress"><span class="iconfont-archer">&#xe606;</span>Octopress</span>
+    
+        <span class="sidebar-tag-name" data-tags="GitHub"><span class="iconfont-archer">&#xe606;</span>GitHub</span>
+    
+        <span class="sidebar-tag-name" data-tags="Python"><span class="iconfont-archer">&#xe606;</span>Python</span>
+    
+        <span class="sidebar-tag-name" data-tags="Django"><span class="iconfont-archer">&#xe606;</span>Django</span>
+    
+        <span class="sidebar-tag-name" data-tags="吐槽"><span class="iconfont-archer">&#xe606;</span>吐槽</span>
+    
+        <span class="sidebar-tag-name" data-tags="日志"><span class="iconfont-archer">&#xe606;</span>日志</span>
+    
+        <span class="sidebar-tag-name" data-tags="Reading"><span class="iconfont-archer">&#xe606;</span>Reading</span>
+    
+        <span class="sidebar-tag-name" data-tags="项目总结"><span class="iconfont-archer">&#xe606;</span>项目总结</span>
+    
+        <span class="sidebar-tag-name" data-tags="ACM"><span class="iconfont-archer">&#xe606;</span>ACM</span>
+    
+        <span class="sidebar-tag-name" data-tags="JavaScript"><span class="iconfont-archer">&#xe606;</span>JavaScript</span>
+    
+        <span class="sidebar-tag-name" data-tags="LeetCode"><span class="iconfont-archer">&#xe606;</span>LeetCode</span>
+    
+        <span class="sidebar-tag-name" data-tags="Java"><span class="iconfont-archer">&#xe606;</span>Java</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="Algorithm"><span class="iconfont-archer">&#xe606;</span>Algorithm</span>
+    
+        <span class="sidebar-tag-name" data-tags="Life"><span class="iconfont-archer">&#xe606;</span>Life</span>
+    
+        <span class="sidebar-tag-name" data-tags="Windows"><span class="iconfont-archer">&#xe606;</span>Windows</span>
+    
+        <span class="sidebar-tag-name" data-tags="ffmpeg"><span class="iconfont-archer">&#xe606;</span>ffmpeg</span>
+    
+        <span class="sidebar-tag-name" data-tags="life"><span class="iconfont-archer">&#xe606;</span>life</span>
+    
+        <span class="sidebar-tag-name" data-tags="Go"><span class="iconfont-archer">&#xe606;</span>Go</span>
+    
+        <span class="sidebar-tag-name" data-tags="c++"><span class="iconfont-archer">&#xe606;</span>c++</span>
+    
+        <span class="sidebar-tag-name" data-tags="essay"><span class="iconfont-archer">&#xe606;</span>essay</span>
+    
+        <span class="sidebar-tag-name" data-tags="review"><span class="iconfont-archer">&#xe606;</span>review</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "findingsea"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
